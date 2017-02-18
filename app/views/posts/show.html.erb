@@ -1,0 +1,16 @@
+<%= render 'shared/title', title: "Show" %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="btn-group btn-group-justified">
+    <%= link_to '顯示', post_path(@post), class:"btn btn-primary  disabled" %>
+    <%= link_to '編輯', edit_post_path(@post), class:"btn btn-primary" %>
+    <%= link_to '删除', post_path(@post), class:"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+
+<h2><%= t("post.title") %></h2>
+<p><%= @post.title %></p>
+
+<h2><%= t("post.content") %></h2>
+<p><%=raw @post.content %></p>

@@ -5,12 +5,22 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
-
-gem 'awesome_print'
+#除錯
 gem 'pry'
+#bootstrap樣式
+gem 'bootstrap-sass'
+#加密
+gem 'bcrypt', '~> 3.1.7'
+#rails c 編譯
+gem 'awesome_print'
+#分頁
+gem 'kaminari'
+#多國語系
+gem 'rails-i18n', '~> 5.0.0'
 
-
+gem 'wysiwyg-rails'
+gem 'font-awesome-rails'
+gem 'rails-html-sanitizer'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
